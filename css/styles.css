@@ -4196,8 +4196,8 @@ img.u-pull-left {
 
 .ss-go-top a:focus,
 .ss-go-top a:hover {
-    background-color : white;
-    border-color     : white;
+    background-color : var(--color-1);
+    border-color     : var(--color-1);
 }
 
 .ss-go-top a:focus svg path,
