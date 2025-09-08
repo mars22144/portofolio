@@ -153,15 +153,15 @@
      */
     --color-text        : var(--color-gray-4);
     --color-text-dark   : var(--color-white);
-    --color-text-light  : var(--color-gray-7);
+    --color-text-light  : var(--color-1);
     --color-placeholder : var(--color-gray-7);
 
     /* buttons
      */
     --color-btn                    : var(--color-gray-9);
     --color-btn-text               : var(--color-1);
-    --color-btn-hover              : var(--color-white);
-    --color-btn-hover-text         : var(--color-black);
+    --color-btn-hover              : var(--color-gray-5);
+    --color-btn-hover-text         : var(--color-white);
     --color-btn-primary            : var(--color-1-dark);
     --color-btn-primary-text       : var(--color-black);
     --color-btn-primary-hover      : var(--color-1-darker);
@@ -179,8 +179,8 @@
 
     /* others
      */
-    --color-body    : var(--color-gray-10);
-    --color-border  : rgba(255, 255, 255, .05);
+    --color-body    : var(--color-gray-12);
+    --color-border  : rgba(255, 0, 0, 0.05);
     --border-radius : 3px;
 }
 
@@ -2028,11 +2028,12 @@ input[type="button"] {
     text-align              : center;
     white-space             : nowrap;
     cursor                  : pointer;
-    transition              : all .3s;
+    transition              : ease-in-out .3s;
     background-color        : var(--color-btn);
     border                  : 1px solid var(--color-btn);
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
+    border-radius: 8px;
 }
 
 .btn:focus,
@@ -2045,9 +2046,9 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-    background-color : var(--color-btn-hover);
-    border-color     : var(--color-btn-hover);
-    color            : var(--color-btn-hover-text);
+    background-color : var(--color-btn-text);
+    border-color     : var(--color-btn-text);
+    color            : var(--color-btn);
     outline          : 0;
 }
 
@@ -3521,7 +3522,7 @@ img.u-pull-left {
     line-height    : var(--vspace-0_75);
     text-transform : uppercase;
     letter-spacing : .2em;
-    color          : var(--color-text-light);
+    color          : var(--color-gray-5);
     margin-top     : -.2rem;
 }
 
@@ -3620,7 +3621,7 @@ img.u-pull-left {
 
 .folio-list__item-link:focus,
 .folio-list__item-link:hover {
-    color   : var(--color-1);
+    color   : var(--color-gray-5);
     outline : 0;
 }
 
@@ -3730,7 +3731,7 @@ img.u-pull-left {
 
 .folio-list__item-cat {
     font-size   : var(--text-sm);
-    color       : var(--color-text-light);
+    color       : var(--color-gray-5);
     line-height : var(--vspace-0_75);
     margin-left : .2rem;
 }
@@ -4061,12 +4062,12 @@ img.u-pull-left {
     font-size   : var(--text-md);
     font-weight : 300;
     line-height : var(--vspace-1_25);
-    color       : var(--color-text-light);
+    color       : var(--color-gray-4);
 }
 
 .contact-links a,
 .contact-social a {
-    color : var(--color-text-light);
+    color : var(--color-gray-4);
 }
 
 .contact-links a:focus,
