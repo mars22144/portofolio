@@ -4130,7 +4130,7 @@ img.u-pull-left {
     margin-top     : auto;
     padding-top    : var(--vspace-1);
     padding-bottom : var(--vspace-3);
-    color          : var(--color-text-light);
+    color          : var(--color-gray-5);
 }
 
 .s-footer>.row {
@@ -4138,7 +4138,7 @@ img.u-pull-left {
 }
 
 .s-footer a {
-    color : var(--color-text);
+    color : var(--color-gray-5);
 }
 
 .s-footer a:focus,
